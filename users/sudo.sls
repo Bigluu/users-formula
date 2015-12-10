@@ -23,5 +23,6 @@ users_sudoer-defaults:
           - pkg: users_sudo-package
         - text:
           - Defaults   env_reset
+          - Defaults   mail_badpass
           - Defaults   secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
           - '#includedir {{ users.sudoers_dir }}'
